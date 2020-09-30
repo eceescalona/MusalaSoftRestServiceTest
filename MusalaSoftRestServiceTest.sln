@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusalaSoftRestServiceTest", "MusalaSoftRestServiceTest\MusalaSoftRestServiceTest.csproj", "{F58BA96C-96C0-40AF-A8BF-6E17B093DADE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusalaSoftRestServiceXUnitTest", "MusalaSoftRestServiceXUnitTest\MusalaSoftRestServiceXUnitTest.csproj", "{10AAE538-E2FF-4280-B3E2-5C697D4B090F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F58BA96C-96C0-40AF-A8BF-6E17B093DADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F58BA96C-96C0-40AF-A8BF-6E17B093DADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F58BA96C-96C0-40AF-A8BF-6E17B093DADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F58BA96C-96C0-40AF-A8BF-6E17B093DADE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10AAE538-E2FF-4280-B3E2-5C697D4B090F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10AAE538-E2FF-4280-B3E2-5C697D4B090F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10AAE538-E2FF-4280-B3E2-5C697D4B090F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10AAE538-E2FF-4280-B3E2-5C697D4B090F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E0C23229-E04E-4880-AE2C-1692B1F0D51A}
+	EndGlobalSection
+EndGlobal

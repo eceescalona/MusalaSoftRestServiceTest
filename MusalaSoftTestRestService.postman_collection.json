@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "cd0c502a-5855-4d6a-a2db-3ea21c93a12c",
+		"name": "MusalaSoftTestRestService",
+		"description": "Collection for work exercise from MusalaSoft",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST Gateways",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ca5791a9-3067-43f2-b26f-c32238bbac6f",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"serialNumber\":\"123-AS367FC\",\r\n\t\"name\":\"Gateway1\",\r\n\t\"ipAddress\":\"192.168.0.1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44300/api/Gateways",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44300",
+					"path": [
+						"api",
+						"Gateways"
+					]
+				},
+				"description": "Add one or more gateways into the platform"
+			},
+			"response": []
+		},
+		{
+			"name": "POST Peripherals",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"uidNumber\":1,\r\n\t\"vendor\":\"Huawei\",\r\n\t\"createDate\":\"2019-01-06T17:16:40\",\r\n\t\"status\":1,\r\n\t\"gatewayId\":\"123-AS367FC\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44300/api/Peripherals",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44300",
+					"path": [
+						"api",
+						"Peripherals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Gateways",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44300/api/Gateways",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44300",
+					"path": [
+						"api",
+						"Gateways"
+					]
+				},
+				"description": "Get all data from Gateways"
+			},
+			"response": []
+		},
+		{
+			"name": "GET Peripherals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44300/api/Peripherals",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44300",
+					"path": [
+						"api",
+						"Peripherals"
+					]
+				},
+				"description": "Get all data from Peripherals"
+			},
+			"response": []
+		},
+		{
+			"name": "GET Gateway",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44300/api/Gateways?id=123-AS367FC",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44300",
+					"path": [
+						"api",
+						"Gateways"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "123-AS367FC",
+							"description": "You need to change the value if you wanna see other gateway"
+						}
+					]
+				},
+				"description": "Get the information of a specific gateway"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Peripheral",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f5c778ee-76ae-4f94-9de9-d1a92da9bff0",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44300/api/Peripherals/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44300",
+					"path": [
+						"api",
+						"Peripherals",
+						"1"
+					]
+				},
+				"description": "Delete the information of a specific peripheral"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "975eeb2e-d32e-4afb-9a1c-89d1b553ddd1",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "1875eba6-37b6-4b0a-ad9a-ec8a0a25bb79",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
